@@ -1,0 +1,436 @@
+{
+    "resourceType": "Bundle",
+    "id": "",
+    "meta": {
+      "lastUpdated": ""
+    },
+    "identifier": {
+      "system": "",
+      "value": ""
+    },
+    "type": "document",
+    "timestamp": "",
+    "entry": [
+      {
+        "fullUrl": "",
+        "resource": {
+          "resourceType": "Composition",
+          "id": "",
+          "meta": {
+            "lastUpdated": ""
+          },
+          "text": {
+            "status": ""
+          },
+          "status": "",
+          "type": {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          },
+          "subject": {
+            "reference": "",
+            "display": ""
+          },
+          "encounter": {
+            "reference": ""
+          },
+          "date": "",
+          "author": [
+            {
+              "reference": "",
+              "display": ""
+            }
+          ],
+          "title": "",
+          "confidentiality": "",
+          "section": [
+            {
+              "title": "",
+              "code": {
+                "coding": [
+                  {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  }
+                ]
+              },
+              "text": {
+                "status": ""
+              },
+              "entry": [
+                {
+                  "reference": ""
+                }
+              ]
+            },
+            {
+              "title": "",
+              "code": {
+                "coding": [
+                  {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  }
+                ]
+              },
+              "text": {
+                "status": ""
+              },
+              "mode": "working",
+              "entry": [
+                {
+                  "reference": ""
+                },
+                {
+                  "reference": ""
+                }
+              ]
+            },
+            {
+              "title": "",
+              "code": {
+                "coding": [
+                  {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  }
+                ]
+              },
+              "text": {
+                "status": ""
+              },
+              "entry": [
+                {
+                  "reference": ""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl": "",
+        "resource": {
+          "resourceType": "Practitioner",
+          "id": "",
+          "meta": {
+            "lastUpdated": ""
+          },
+          "text": {
+            "status": ""
+          },
+          "identifier": [
+            {
+              "system": "",
+              "value": ""
+            }
+          ],
+          "name": [
+            {
+              "family": "",
+              "given": [
+                ""
+              ],
+              "prefix": [
+                ""
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl": "",
+        "resource": {
+          "resourceType": "Patient",
+          "id": "",
+          "text": {
+            "status": ""
+          },
+          "active": true,
+          "name": [
+            {
+              "text": "",
+              "family": "",
+              "given": [
+                ""
+              ]
+            }
+          ],
+          "": [
+            {
+              "system": "",
+              "value": "",
+              "use": ""
+            }
+          ],
+          "gender": "",
+          "birthDate": "",
+          "address": [
+            {
+              "use": "",
+              "line": [
+                ""
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl": "",
+        "resource": {
+          "resourceType": "",
+          "id": "",
+          "meta": {
+            "lastUpdated": ""
+          },
+          "text": {
+            "status": ""
+          },
+          "identifier": [
+            {
+              "value": ""
+            }
+          ],
+          "status": "",
+          "class": {
+            "system": "",
+            "code": "",
+            "display": ""
+          },
+          "type": [
+            {
+              "text": ""
+            }
+          ],
+          "subject": {
+            "reference": ""
+          },
+          "period": {
+            "start": "",
+            "end": ""
+          },
+          "hospitalization": {
+            "dischargeDisposition": {
+              "text": ""
+            }
+          }
+        }
+      },
+      {
+        "fullUrl": "",
+        "resource": {
+          "resourceType": "",
+          "meta": {
+            "lastUpdated": ""
+          },
+          "text": {
+            "status": ""
+          },
+          "status": "",
+          "code": {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          },
+          "subject": {
+            "reference": "",
+            "display": ""
+          },
+          "encounter": {
+            "reference": ""
+          },
+          "valueString": ""
+        }
+      },
+      {
+        "fullUrl": "",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "meta": {
+            "lastUpdated": ""
+          },
+          "text": {
+            "status": ""
+          },
+          "status": "",
+          "intent": "",
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          },
+          "subject": {
+            "reference": "",
+            "display": ""
+          },
+          "requester": {
+            "reference": "",
+            "display": ""
+          },
+          "reasonCode": [
+            {
+              "text": ""
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "additionalInstruction": [
+                {
+                  "text": ""
+                }
+              ],
+              "timing": {
+                "repeat": {
+                  "frequency": 0,
+                  "period": 0,
+                  "periodUnit": ""
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "",
+                    "code": "",
+                    "display": ""
+                  }
+                ]
+              },
+              "doseAndRate": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "",
+                        "code": "",
+                        "display": ""
+                      }
+                    ]
+                  },
+                  "doseQuantity": {
+                    "value": 0,
+                    "unit": "",
+                    "system": "",
+                    "code": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "fullUrl": "",
+        "resource": {
+          "resourceType": "MedicationStatement",
+          "text": {
+            "status": ""
+          },
+          "status": "",
+          "statusReason": [
+            {
+              "text": ""
+            }
+          ],
+          "medicationCodeableConcept": {
+            "text": ""
+          },
+          "subject": {
+            "reference": "",
+            "display": ""
+          },
+          "dateAsserted": ""
+        }
+      },
+      {
+        "fullUrl": "",
+        "resource": {
+          "resourceType": "AllergyIntolerance",
+          "meta": {
+            "lastUpdated": ""
+          },
+          "text": {
+            "status": ""
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "",
+                "code": "",
+                "display": ""
+              }
+            ]
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "",
+                "code": "",
+                "display": ""
+              }
+            ]
+          },
+          "type": "",
+          "criticality": "",
+          "code": {
+            "text": ""
+          },
+          "patient": {
+            "reference": "",
+            "display": ""
+          },
+          "recordedDate": "",
+          "reaction": [
+            {
+              "manifestation": [
+                {
+                  "coding": [
+                    {
+                      "system": "",
+                      "code": "",
+                      "display": ""
+                    }
+                  ],
+                  "text": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "signature": {
+      "type": [
+        {
+          "system": "",
+          "code": "",
+          "display": ""
+        }
+      ],
+      "when": "",
+      "who": {
+        "reference": ""
+      },
+      "onBehalfOf": {
+        "reference": ""
+      },
+      "sigFormat": "",
+      "data": ""
+    }
+  } 
+  

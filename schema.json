@@ -1,0 +1,2190 @@
+{
+	"medecin": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"service_id": {
+			"type": "number",
+			"required": true
+		},
+		"user_id": {
+			"type": "number",
+			"required": true
+		},
+		"lesrendezvous": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"client": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"adresse": {
+			"type": "string",
+			"required": true
+		},
+		"designation": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"ville": {
+			"type": "string",
+			"required": true
+		},
+		"type_client_id": {
+			"type": "number",
+			"required": true
+		},
+		"telephone": {
+			"type": "string",
+			"required": true
+		},
+		"contact": {
+			"type": "string",
+			"required": true
+		},
+		"solde": {
+			"type": "number",
+			"required": true
+		},
+		"clientTauxes": {
+			"type": "Array",
+			"required": true
+		},
+		"echeance": {
+			"type": "Date",
+			"required": false
+		},
+		"factureClients": {
+			"type": "Array",
+			"required": true
+		},
+		"etatsuppr": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"caracteristiques": {},
+	"type_accompagnant": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"libelle": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"totalPopulation": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"value": {
+			"type": "Object",
+			"structure": {
+				"motif": {
+					"type": "number",
+					"required": true
+				},
+				"date": {
+					"type": "Date",
+					"required": true
+				},
+				"examem": {
+					"type": "number",
+					"required": true
+				}
+			},
+			"required": true
+		}
+	},
+	"type_reglement": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"libelle": {
+			"type": "string",
+			"required": true
+		},
+		"reglements": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"reglement": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"urgence_YN": {
+			"type": "number",
+			"required": true
+		},
+		"montant": {
+			"type": "number",
+			"required": true
+		},
+		"type_reglement_id": {
+			"type": "number",
+			"required": true
+		},
+		"facture_id": {
+			"type": "number",
+			"required": true
+		},
+		"numerocheque": {
+			"type": "string",
+			"required": true
+		},
+		"banque_id": {
+			"type": "number",
+			"required": true
+		},
+		"date": {
+			"type": "Date",
+			"required": true
+		}
+	},
+	"colposcopie": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"conclusion": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"consgyneccolpos_id": {
+			"type": "number",
+			"required": true
+		},
+		"contraceptionTraitementEnCour": {
+			"type": "string",
+			"required": true
+		},
+		"date_dernieres_regles": {
+			"type": "Date",
+			"required": true
+		},
+		"examenCliniqueParaclinique": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"frottis": {
+			"type": "string",
+			"required": true
+		},
+		"motifSigneFonctionnel": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"datefrottis": {
+			"type": "Date",
+			"required": true
+		}
+	},
+	"pays": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"alpha2": {
+			"type": "string",
+			"required": true
+		},
+		"alpha3": {
+			"type": "string",
+			"required": true
+		},
+		"code": {
+			"type": "string",
+			"required": true
+		},
+		"nom_en_gb": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"nom_fr_fr": {
+			"key": true,
+			"type": "string",
+			"required": true
+		}
+	},
+	"senelogie": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"conclusion": {
+			"type": "string",
+			"required": true
+		},
+		"consgynecsen_id": {
+			"type": "number",
+			"required": true
+		},
+		"dateDernieres": {
+			"type": "Date",
+			"required": true
+		},
+		"examclin": {
+			"type": "string",
+			"required": true
+		},
+		"exampara": {
+			"type": "string",
+			"required": true
+		},
+		"motifs": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"motifsortie": {},
+	"devis": {},
+	"accompagnant": {},
+	"role": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"herite": {
+			"type": "number",
+			"required": true
+		},
+		"libelle": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"utilisateurs": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"dent": {},
+	"priseencharge": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"beneficiaire_id": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"prescription": {},
+	"prescriptionOrdonnance": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"date": {
+			"type": "Date",
+			"required": true
+		},
+		"medicamentPrescriptionBeans": {
+			"type": "Array",
+			"required": true
+		},
+		"rendezvous_id": {
+			"type": "number",
+			"required": true
+		},
+		"type": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"idPatient": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"suivigrossesse7": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"activite_cardiaque": {
+			"type": "string",
+			"required": true
+		},
+		"circonference": {
+			"type": "string",
+			"required": true
+		},
+		"coeur": {
+			"type": "string",
+			"required": true
+		},
+		"conclusion": {
+			"type": "string",
+			"required": true
+		},
+		"cordon": {
+			"type": "string",
+			"required": true
+		},
+		"diametre_biparietal": {
+			"type": "string",
+			"required": true
+		},
+		"echostructure": {
+			"type": "string",
+			"required": true
+		},
+		"formconsgynecoSG7": {
+			"type": "number",
+			"required": true
+		},
+		"grade_de_maturite": {
+			"type": "string",
+			"required": true
+		},
+		"index_doppler": {
+			"type": "string",
+			"required": true
+		},
+		"levre_superieure": {
+			"type": "string",
+			"required": true
+		},
+		"liquide_amniotique": {
+			"type": "string",
+			"required": true
+		},
+		"localisation": {
+			"type": "string",
+			"required": true
+		},
+		"longueur_femorale": {
+			"type": "string",
+			"required": true
+		},
+		"membres": {
+			"type": "string",
+			"required": true
+		},
+		"mouvement_actif": {
+			"type": "string",
+			"required": true
+		},
+		"mouvement_respiratoire": {
+			"type": "string",
+			"required": true
+		},
+		"prescription": {
+			"type": "string",
+			"required": true
+		},
+		"rachis": {
+			"type": "string",
+			"required": true
+		},
+		"rein": {
+			"type": "string",
+			"required": true
+		},
+		"sexe": {
+			"type": "string",
+			"required": true
+		},
+		"stomac": {
+			"type": "string",
+			"required": true
+		},
+		"therme_echographique": {
+			"type": "string",
+			"required": true
+		},
+		"therme_theorique": {
+			"type": "string",
+			"required": true
+		},
+		"ventricule_cerebraux": {
+			"type": "string",
+			"required": true
+		},
+		"vesicule_bilaire": {
+			"type": "string",
+			"required": true
+		},
+		"vessie": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"type_Cotation": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"examens": {
+			"type": "Array",
+			"required": true
+		},
+		"libelle": {
+			"type": "string",
+			"required": true
+		},
+		"typeCotaClients": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"cons_gyneral": {
+		"_id": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"parametre": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"code": {
+			"type": "string",
+			"required": true
+		},
+		"valeur": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"TypeCotaClient": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"typeclient_id": {
+			"type": "number",
+			"required": true
+		},
+		"service_id": {
+			"type": "number",
+			"required": true
+		},
+		"typecotation_id": {
+			"type": "number",
+			"required": true
+		},
+		"prix": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"medics": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"": {
+			"type": "string",
+			"required": true
+		},
+		"code": {
+			"type": "number",
+			"required": true
+		},
+		"dateAMM": {
+			"type": "string",
+			"required": true
+		},
+		"denomination": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"etatCommercialisation": {
+			"type": "string",
+			"required": true
+		},
+		"forme": {
+			"type": "string",
+			"required": true
+		},
+		"medicamentPrescription": {
+			"type": "Array",
+			"required": true
+		},
+		"numeroAuto": {
+			"type": "string",
+			"required": true
+		},
+		"statut": {
+			"type": "string",
+			"required": true
+		},
+		"statutBdm": {
+			"type": "string",
+			"required": true
+		},
+		"statutdm": {
+			"type": "string",
+			"required": true
+		},
+		"surveillance": {
+			"type": "string",
+			"required": true
+		},
+		"titulaire": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"typeProcedure": {
+			"type": "string",
+			"required": true
+		},
+		"voieAdmin": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"datExpiration": {
+			"type": "Date",
+			"required": true
+		},
+		"quantite": {
+			"type": "number",
+			"required": true
+		},
+		"etatArchive": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"configuration": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"adresse": {
+			"type": "string",
+			"required": true
+		},
+		"archiveInteger": {
+			"type": "number",
+			"required": true
+		},
+		"archiveIntegerFacture": {
+			"type": "number",
+			"required": true
+		},
+		"devise": {
+			"type": "string",
+			"required": true
+		},
+		"email": {
+			"type": "string",
+			"required": true
+		},
+		"emailenvoie": {
+			"type": "string",
+			"required": true
+		},
+		"logo": {
+			"type": "string",
+			"required": true
+		},
+		"nomStructure": {
+			"type": "string",
+			"required": true
+		},
+		"patientValid": {
+			"type": "boolean",
+			"required": true
+		},
+		"serveurimagerie": {
+			"type": "string",
+			"required": true
+		},
+		"serveursmtp": {
+			"type": "string",
+			"required": true
+		},
+		"showHospitalisation": {
+			"type": "boolean",
+			"required": true
+		},
+		"siteWeb": {
+			"type": "string",
+			"required": true
+		},
+		"telephone": {
+			"type": "string",
+			"required": true
+		},
+		"useNip": {
+			"type": "boolean",
+			"required": true
+		},
+		"lastIdFactureClient": {
+			"type": "number",
+			"required": true
+		},
+		"lastMonthNumber": {
+			"type": "number",
+			"required": true
+		},
+		"radioYN": {
+			"type": "boolean",
+			"required": true
+		},
+		"gynecoYN": {
+			"type": "boolean",
+			"required": true
+		},
+		"lastrdvNum": {
+			"type": "string",
+			"required": true
+		},
+		"lastDocNum": {
+			"type": "string",
+			"required": true
+		},
+		"archiveIntegerPatient": {
+			"type": "number",
+			"required": true
+		},
+		"phamacieYN": {
+			"type": "boolean",
+			"required": true
+		},
+		"sshYN": {
+			"type": "boolean",
+			"required": true
+		},
+		"listidservices": {
+			"type": "Array",
+			"required": true
+		},
+		"listidservicesadmin": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"salarie": {},
+	"patient": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"etatDossier": {
+			"type": "number",
+			"required": true
+		},
+		"telephonePatient": {
+			"type": "string",
+			"required": true
+		},
+		"adresse": {
+			"type": "string",
+			"required": true
+		},
+		"poids": {
+			"type": "number",
+			"required": true
+		},
+		"antecedentsFamiliaux": {
+			"type": "string",
+			"required": true
+		},
+		"dateNissance": {
+			"type": "Date",
+			"required": true
+		},
+		"telPortable": {
+			"type": "string",
+			"required": true
+		},
+		"nom": {
+			"type": "string",
+			"required": true
+		},
+		"etatgrossesse": {
+			"type": "number",
+			"required": true
+		},
+		"preventionsDepistages": {
+			"type": "string",
+			"required": true
+		},
+		"prenom": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"satutPrisEnCharge": {
+			"type": "number",
+			"required": true
+		},
+		"email": {
+			"type": "string",
+			"required": true
+		},
+		"affectionsLD": {
+			"type": "string",
+			"required": true
+		},
+		"taille": {
+			"type": "number",
+			"required": true
+		},
+		"sexe": {
+			"type": "string",
+			"required": true
+		},
+		"situation": {
+			"type": "string",
+			"required": true
+		},
+		"antecedentsPersonnels": {
+			"type": "string",
+			"required": true
+		},
+		"piece": {
+			"type": "number",
+			"required": true
+		},
+		"allergies": {
+			"type": "string",
+			"required": true
+		},
+		"autresAntecedents": {
+			"type": "string",
+			"required": true
+		},
+		"cni": {
+			"type": "string",
+			"required": true
+		},
+		"numDossier": {
+			"type": "string",
+			"required": true
+		},
+		"statut": {
+			"type": "string",
+			"required": true
+		},
+		"profession": {
+			"type": "string",
+			"required": true
+		},
+		"ville": {
+			"type": "string",
+			"required": true
+		},
+		"beneficiaire_id": {
+			"type": "number",
+			"required": true
+		},
+		"nip": {
+			"type": "string",
+			"required": true
+		},
+		"emailmed": {
+			"type": "string",
+			"required": true
+		},
+		"telephonemed": {
+			"type": "string",
+			"required": true
+		},
+		"nomed": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"rendezVous": {
+			"type": "Array",
+			"required": true
+		},
+		"dateDernierRv": {
+			"type": "Date",
+			"required": true
+		},
+		"pays": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"TrimestreUn": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"date": {
+			"type": "Date",
+			"required": true
+		},
+		"echographieT1_id": {
+			"type": "number",
+			"required": true
+		},
+		"etatinter": {
+			"type": "number",
+			"required": true
+		},
+		"grossesse_id": {
+			"type": "number",
+			"required": true
+		},
+		"listDicomChoisies": {
+			"type": "Array",
+			"required": true
+		},
+		"medecin": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"visite": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"planification": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"conclusion": {
+			"type": "string",
+			"required": true
+		},
+		"conclusionArret": {
+			"type": "string",
+			"required": true
+		},
+		"conclusionBilan": {
+			"type": "string",
+			"required": true
+		},
+		"consgynecoPlan_id": {
+			"type": "number",
+			"required": true
+		},
+		"datePrescription": {
+			"type": "Date",
+			"required": true
+		},
+		"indicationPilule": {
+			"type": "string",
+			"required": true
+		},
+		"indicationPreservatif": {
+			"type": "string",
+			"required": true
+		},
+		"methode": {
+			"type": "string",
+			"required": true
+		},
+		"motifArret": {
+			"type": "string",
+			"required": true
+		},
+		"signeFoncionnel": {
+			"type": "string",
+			"required": true
+		},
+		"Pilule": {
+			"type": "string",
+			"required": true
+		},
+		"preservatif": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"rendez_vous": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"service_id": {
+			"type": "number",
+			"required": true
+		},
+		"examrdv": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"etat": {
+			"type": "string",
+			"required": true
+		},
+		"numRendezVous": {
+			"type": "string",
+			"required": true
+		},
+		"etatsalle": {
+			"type": "number",
+			"required": true
+		},
+		"facturer": {
+			"type": "boolean",
+			"required": true
+		},
+		"etatinter": {
+			"type": "number",
+			"required": true
+		},
+		"nomMedecin": {
+			"type": "string",
+			"required": true
+		},
+		"patient_id": {
+			"type": "number",
+			"required": true
+		},
+		"medecin_id": {
+			"type": "number",
+			"required": true
+		},
+		"date": {
+			"type": "Date",
+			"required": true
+		},
+		"dateConfirmation": {
+			"type": "Date",
+			"required": true
+		},
+		"numRegistre": {
+			"type": "string",
+			"required": true
+		},
+		"facturePatients": {
+			"type": "Array",
+			"required": true
+		},
+		"indication": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"conclusion": {
+			"type": "string",
+			"required": true
+		},
+		"interglobale": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"hibernate_sequences": {
+		"_id": {
+			"primaryKey": true,
+			"type": "string",
+			"required": true
+		},
+		"sequence_value": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"technique_utilise": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"libelle": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"diagnostic_id": {
+			"type": "number",
+			"required": true
+		},
+		"examen_id": {
+			"type": "number",
+			"required": true
+		},
+		"typeinterpretation": {
+			"type": "string",
+			"required": false
+		}
+	},
+	"ville": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"alpha3": {
+			"type": "string",
+			"required": true
+		},
+		"axe": {
+			"type": "string",
+			"required": true
+		},
+		"lati": {
+			"type": "string",
+			"required": true
+		},
+		"longi": {
+			"type": "string",
+			"required": true
+		},
+		"villename": {
+			"key": true,
+			"type": "string",
+			"required": true
+		}
+	},
+	"remuneration": {},
+	"facture": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"remise": {
+			"type": "number",
+			"required": true
+		},
+		"rendez_vous_id": {
+			"type": "number",
+			"required": true
+		},
+		"etatValidation": {
+			"type": "number",
+			"required": true
+		},
+		"reste_a_payer": {
+			"type": "number",
+			"required": true
+		},
+		"montant": {
+			"type": "number",
+			"required": true
+		},
+		"etatReglement": {
+			"type": "number",
+			"required": true
+		},
+		"booleanValidation": {
+			"type": "boolean",
+			"required": true
+		},
+		"nature_facture": {
+			"type": "string",
+			"required": true
+		},
+		"DTYPE": {
+			"type": "string",
+			"required": true
+		},
+		"date": {
+			"type": "Date",
+			"required": true
+		},
+		"numero": {
+			"type": "string",
+			"required": true
+		},
+		"etatFacture": {
+			"type": "number",
+			"required": true
+		},
+		"type_remise": {
+			"type": "number",
+			"required": true
+		},
+		"nom_facture": {
+			"key": true,
+			"type": "string",
+			"required": true
+		}
+	},
+	"typesalle": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"categoriesalleBean": {
+			"type": "Array",
+			"required": true
+		},
+		"libelle": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"menopause": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"Alimentation": {
+			"type": "string",
+			"required": true
+		},
+		"Boissons": {
+			"type": "string",
+			"required": true
+		},
+		"Conclusions": {
+			"type": "string",
+			"required": true
+		},
+		"Examen_Clinique": {
+			"type": "string",
+			"required": true
+		},
+		"Examen_Paraclinique": {
+			"type": "string",
+			"required": true
+		},
+		"Motifs_Signes_fonctionnels": {
+			"type": "string",
+			"required": true
+		},
+		"Sport": {
+			"type": "string",
+			"required": true
+		},
+		"antecedentFamliaux": {
+			"type": "boolean",
+			"required": true
+		},
+		"consgynecsme_id": {
+			"type": "number",
+			"required": true
+		},
+		"dateMenopause": {
+			"type": "Date",
+			"required": true
+		}
+	},
+	"client_taux": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"taux": {
+			"type": "number",
+			"required": true
+		},
+		"client_id": {
+			"type": "number",
+			"required": true
+		},
+		"beneficiaires": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"beneficiaire": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"prenom": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"email": {
+			"type": "string",
+			"required": true
+		},
+		"benefSatutName": {
+			"type": "string",
+			"required": true
+		},
+		"nip": {
+			"type": "string",
+			"required": true
+		},
+		"telephone": {
+			"type": "string",
+			"required": true
+		},
+		"matricule": {
+			"type": "string",
+			"required": true
+		},
+		"nom": {
+			"type": "string",
+			"required": true
+		},
+		"client_taux_id": {
+			"type": "number",
+			"required": true
+		},
+		"patients": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"admission": {},
+	"infos_irm": {},
+	"salle": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"etatsuppr": {
+			"type": "number",
+			"required": true
+		},
+		"groupEamen_id": {
+			"type": "number",
+			"required": true
+		},
+		"nblits": {
+			"type": "number",
+			"required": true
+		},
+		"nom": {
+			"type": "string",
+			"required": true
+		},
+		"service_id": {
+			"type": "number",
+			"required": true
+		},
+		"type": {
+			"type": "boolean",
+			"required": true
+		},
+		"diagnostics": {
+			"type": "Array",
+			"required": true
+		},
+		"categorieSalle_id": {
+			"type": "undefined",
+			"required": false
+		},
+		"typeSalle_id": {
+			"type": "undefined",
+			"required": false
+		}
+	},
+	"motif": {},
+	"news": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"etat": {
+			"type": "string",
+			"required": true
+		},
+		"information": {
+			"type": "string",
+			"required": true
+		},
+		"dateFin": {
+			"type": "Date",
+			"required": true
+		},
+		"userid": {
+			"type": "number",
+			"required": true
+		},
+		"usernom": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"dateDebut": {
+			"type": "Date",
+			"required": true
+		}
+	},
+	"examen": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"typecotation_id": {
+			"type": "number",
+			"required": true
+		},
+		"groupe_examen_id": {
+			"type": "number",
+			"required": true
+		},
+		"libelle": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"indication": {
+			"type": "string",
+			"required": true
+		},
+		"cotationSociete": {
+			"type": "number",
+			"required": true
+		},
+		"cotation": {
+			"type": "number",
+			"required": true
+		},
+		"cotationIpm": {
+			"type": "number",
+			"required": true
+		},
+		"diagnostics": {
+			"type": "Array",
+			"required": true
+		},
+		"techniques": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"sterilite": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"antecedentReeducation": {
+			"type": "boolean",
+			"required": true
+		},
+		"consgynecster_id": {
+			"type": "number",
+			"required": true
+		},
+		"antecedentsdupartenaire": {
+			"type": "string",
+			"required": true
+		},
+		"autres": {
+			"type": "string",
+			"required": true
+		},
+		"boissons": {
+			"type": "string",
+			"required": true
+		},
+		"caracteredescycles": {
+			"type": "string",
+			"required": true
+		},
+		"conclusions": {
+			"type": "string",
+			"required": true
+		},
+		"contraceptiontraitementencours": {
+			"type": "string",
+			"required": true
+		},
+		"datedebutsymptomes": {
+			"type": "Date",
+			"required": true
+		},
+		"datedenieresregles": {
+			"type": "Date",
+			"required": true
+		},
+		"dificultessexuelles": {
+			"type": "string",
+			"required": true
+		},
+		"douleurspelviennes": {
+			"type": "string",
+			"required": true
+		},
+		"examenclinique": {
+			"type": "string",
+			"required": true
+		},
+		"examenparaclinique": {
+			"type": "string",
+			"required": true
+		},
+		"sports": {
+			"type": "string",
+			"required": true
+		},
+		"travail": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"troublesdigestifs": {
+			"type": "string",
+			"required": true
+		},
+		"troublesmictionnels": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"type_caracteristique": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"libelle": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"utilisateur": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"telephone1": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"prenom": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"dateCreation": {
+			"type": "Date",
+			"required": true
+		},
+		"email": {
+			"type": "string",
+			"required": true
+		},
+		"etat": {
+			"type": "number",
+			"required": true
+		},
+		"identifiant": {
+			"type": "string",
+			"required": true
+		},
+		"motDePasse": {
+			"type": "string",
+			"required": true
+		},
+		"nom": {
+			"type": "string",
+			"required": true
+		},
+		"role_id": {
+			"type": "number",
+			"required": true
+		},
+		"telephone2": {
+			"type": "string",
+			"required": true
+		},
+		"periodicite": {
+			"type": "string",
+			"required": true
+		},
+		"sexe": {
+			"type": "string",
+			"required": true
+		},
+		"medecins": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"relations": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"DentCons_id": {
+			"type": "number",
+			"required": true
+		},
+		"examenBean_id": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"fiche_gyneco": {},
+	"banque": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"nomBanque": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"groupe_examen": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"libelle": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"examens": {
+			"type": "Array",
+			"required": true
+		},
+		"service_id": {
+			"type": "number",
+			"required": true
+		},
+		"salles": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"medicamentPrescriptionBean": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"commentaires": {
+			"type": "string",
+			"required": true
+		},
+		"idPrescription": {
+			"type": "number",
+			"required": true
+		},
+		"medics_id": {
+			"type": "number",
+			"required": true
+		},
+		"nomMedic": {
+			"type": "string",
+			"required": true
+		},
+		"posologie": {
+			"type": "string",
+			"required": true
+		},
+		"prescriptionOrdonnance_id": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"cons_gyneco": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"consrv_id": {
+			"type": "number",
+			"required": true
+		},
+		"formconsgynecostand": {
+			"type": "Array",
+			"required": true
+		},
+		"formconsgynecocolpos": {
+			"type": "Array",
+			"required": true
+		},
+		"formconsgynecomenpause": {
+			"type": "Array",
+			"required": true
+		},
+		"formconsgynecosenelogie": {
+			"type": "Array",
+			"required": true
+		},
+		"formconsgyneco": {
+			"type": "Array",
+			"required": true
+		},
+		"formconsgynecoplanification": {
+			"type": "Array",
+			"required": true
+		},
+		"formconsgynecosterilite": {
+			"type": "Array",
+			"required": true
+		},
+		"formconsgynecourogyneco": {
+			"type": "Array",
+			"required": true
+		},
+		"formconsgynecoSG7": {
+			"type": "Array",
+			"required": true
+		},
+		"grossesse": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"techniquebean": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"typetechnique": {
+			"type": "string",
+			"required": true
+		},
+		"libelle": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"serviceid": {
+			"type": "number",
+			"required": true
+		},
+		"suprYn": {
+			"type": "boolean",
+			"required": true
+		}
+	},
+	"practitioner": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"adressePro": {
+			"type": "string",
+			"required": true
+		},
+		"email": {
+			"type": "string",
+			"required": true
+		},
+		"nom": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"prenom": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"section": {
+			"type": "string",
+			"required": true
+		},
+		"specialite": {
+			"type": "string",
+			"required": true
+		},
+		"telephoneBur": {
+			"type": "string",
+			"required": false
+		},
+		"telephoneMob": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"diagnostics": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"cons_orthogenie": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"accompagnant": {
+			"type": "string",
+			"required": true
+		},
+		"conclusion": {
+			"type": "string",
+			"required": true
+		},
+		"consgyn_id": {
+			"type": "number",
+			"required": true
+		},
+		"contraceTraitement": {
+			"type": "string",
+			"required": true
+		},
+		"dateAgePart": {
+			"type": "number",
+			"required": true
+		},
+		"examclin": {
+			"type": "string",
+			"required": true
+		},
+		"exampar": {
+			"type": "string",
+			"required": true
+		},
+		"facteurRis": {
+			"type": "string",
+			"required": true
+		},
+		"nomAccomp": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"debutGrossesse": {
+			"type": "Date",
+			"required": true
+		},
+		"dernierRegles": {
+			"type": "Date",
+			"required": true
+		}
+	},
+	"consultation_rv": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"consultationgyneco": {
+			"type": "Array",
+			"required": true
+		},
+		"examenBean_id": {
+			"type": "number",
+			"required": true
+		},
+		"rv_id": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"service": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"etat": {
+			"type": "string",
+			"required": true
+		},
+		"groupeExamens": {
+			"type": "Array",
+			"required": true
+		},
+		"libelle": {
+			"type": "string",
+			"required": true
+		},
+		"motifs": {
+			"type": "Array",
+			"required": true
+		},
+		"qualificatif": {
+			"type": "string",
+			"required": true
+		},
+		"typeCotaClients": {
+			"type": "Array",
+			"required": true
+		},
+		"salles": {
+			"type": "Array",
+			"required": true
+		},
+		"medecins": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"Tranferts": {},
+	"categoriesalle": {},
+	"Groupexam_rendezvous": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"libelle_grexamen": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"idrv": {
+			"type": "number",
+			"required": true
+		},
+		"idgre": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"gyneco_standard": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"conclusionstand": {
+			"type": "string",
+			"required": true
+		},
+		"consgynecst_id": {
+			"type": "number",
+			"required": true
+		},
+		"contraTraitements": {
+			"type": "string",
+			"required": true
+		},
+		"datederegles": {
+			"type": "Date",
+			"required": true
+		},
+		"examenstand": {
+			"type": "string",
+			"required": true
+		},
+		"parastandard": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"signefonctionnel": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"diagnostic": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"valeur": {
+			"type": "number",
+			"required": true
+		},
+		"montantExamen": {
+			"type": "number",
+			"required": true
+		},
+		"partInteresse": {
+			"type": "number",
+			"required": true
+		},
+		"id_rdv": {
+			"type": "number",
+			"required": true
+		},
+		"cotation": {
+			"type": "string",
+			"required": true
+		},
+		"nomMedecin": {
+			"type": "string",
+			"required": true
+		},
+		"salle_id": {
+			"type": "number",
+			"required": true
+		},
+		"date": {
+			"type": "Date",
+			"required": true
+		},
+		"etat": {
+			"type": "number",
+			"required": true
+		},
+		"partSociete": {
+			"type": "number",
+			"required": true
+		},
+		"nomMalade": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"afacturer": {
+			"type": "number",
+			"required": true
+		},
+		"examen_id": {
+			"type": "number",
+			"required": true
+		},
+		"motifExamen": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"beneficiaire": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"idClient": {
+			"type": "number",
+			"required": true
+		},
+		"id_facture": {
+			"type": "number",
+			"required": true
+		},
+		"interexam": {
+			"type": "string",
+			"required": true
+		},
+		"techniques": {
+			"type": "Array",
+			"required": true
+		},
+		"id_factureClient": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"prescriptionDetail": {},
+	"urogenycologie": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"autre": {
+			"type": "string",
+			"required": true
+		},
+		"boiss": {
+			"type": "string",
+			"required": true
+		},
+		"consgynecu_id": {
+			"type": "number",
+			"required": true
+		},
+		"contraurog": {
+			"type": "string",
+			"required": true
+		},
+		"difficultesex": {
+			"type": "string",
+			"required": true
+		},
+		"examenuro": {
+			"type": "string",
+			"required": true
+		},
+		"incontinence": {
+			"type": "string",
+			"required": true
+		},
+		"miction": {
+			"type": "string",
+			"required": true
+		},
+		"parauro": {
+			"type": "string",
+			"required": true
+		},
+		"selectone": {
+			"type": "boolean",
+			"required": true
+		},
+		"sport": {
+			"type": "string",
+			"required": true
+		},
+		"travail": {
+			"type": "string",
+			"required": true
+		},
+		"troubledig": {
+			"type": "string",
+			"required": true
+		},
+		"troublemic": {
+			"type": "string",
+			"required": true
+		},
+		"uroconclu": {
+			"type": "string",
+			"required": true
+		},
+		"urogdatDar": {
+			"type": "Date",
+			"required": true
+		}
+	},
+	"echographieTrimestre1": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"ac": {
+			"type": "string",
+			"required": true
+		},
+		"activiteCardiaque": {
+			"type": "string",
+			"required": true
+		},
+		"circonferenceAbdominale": {
+			"type": "string",
+			"required": true
+		},
+		"clarteNucale": {
+			"type": "string",
+			"required": true
+		},
+		"conclusion": {
+			"type": "string",
+			"required": true
+		},
+		"diametrFemorale": {
+			"type": "string",
+			"required": true
+		},
+		"diametreBiparietal": {
+			"type": "string",
+			"required": true
+		},
+		"diametreMoyenSac": {
+			"type": "string",
+			"required": true
+		},
+		"diametreUterus": {
+			"type": "string",
+			"required": true
+		},
+		"epaisseurUterus": {
+			"type": "string",
+			"required": true
+		},
+		"lcc": {
+			"type": "string",
+			"required": true
+		},
+		"liquideAmniotique": {
+			"type": "string",
+			"required": true
+		},
+		"longueurBiometrie": {
+			"type": "string",
+			"required": true
+		},
+		"longueurUterus": {
+			"type": "string",
+			"required": true
+		},
+		"maf": {
+			"type": "string",
+			"required": true
+		},
+		"morphologie": {
+			"type": "string",
+			"required": true
+		},
+		"mouvementActif": {
+			"type": "string",
+			"required": true
+		},
+		"nombreEmbryon": {
+			"type": "string",
+			"required": true
+		},
+		"nombreSacGestationnel": {
+			"type": "string",
+			"required": true
+		},
+		"prescription": {
+			"type": "string",
+			"required": true
+		},
+		"trimestre1beans": {
+			"type": "Array",
+			"required": true
+		},
+		"trophoblaste": {
+			"type": "string",
+			"required": true
+		},
+		"vesiculeOmbilicale": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"type_client": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"clients": {
+			"type": "Array",
+			"required": true
+		},
+		"libelle": {
+			"type": "string",
+			"required": true
+		},
+		"typeCotaClients": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"grossesse_encours": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"consGyneco_id": {
+			"type": "number",
+			"required": true
+		},
+		"dateGrossesse": {
+			"type": "Date",
+			"required": true
+		},
+		"etat": {
+			"type": "boolean",
+			"required": true
+		},
+		"nomPere": {
+			"type": "string",
+			"required": true
+		},
+		"parite": {
+			"type": "number",
+			"required": true
+		},
+		"prenomPere": {
+			"type": "string",
+			"required": true
+		},
+		"termePrevu": {
+			"type": "Date",
+			"required": true
+		},
+		"trimestreUnBeans": {
+			"type": "Array",
+			"required": true
+		}
+	},
+	"groupe_sanguin": {
+		"_id": {
+			"type": "number",
+			"required": true
+		},
+		"libelle": {
+			"type": "string",
+			"required": true
+		},
+		"patients": {
+			"type": "Array",
+			"required": true
+		}
+	}
+}

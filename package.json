@@ -1,0 +1,18 @@
+{
+  "name": "test01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fhir": "^4.8.2",
+    "fs": "0.0.1-security",
+    "jsonpath": "^1.1.1",
+    "mongodb": "^3.6.6",
+    "shelljs": "^0.8.4"
+  }
+}
